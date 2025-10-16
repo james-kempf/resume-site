@@ -35,8 +35,75 @@
 
 .card {
   padding: 2em;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.divider {
+  margin: 0 auto;
+  width: 25%;
+  min-width: 200px;
+}
+
+.list-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.column-container {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 1000px) {
+  .column-container {
+    display: block;
+    gap: 0;
+  }
+}
+
+.column {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.external-logo {
+  height: 50px;
+  filter: brightness(0) invert(1);
+  padding-top: 20px;
+}
+
+.external-logo-lrg {
+  height: 70px;
+  filter: brightness(0) invert(1);
+  padding-top: 20px;
+}
+
+.code-box {
+  background-color: #1e1e1e;
+  color: #dcdcdc;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: auto;
+  line-height: 1.5;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
