@@ -7,6 +7,7 @@ function App() {
 
   const sections = [
     {
+      id: 0,
       title: "Experience",
       entries: [
         {
@@ -16,7 +17,7 @@ function App() {
           image: 'src/assets/thentia.svg',
           subtitle: 'Full Stack Developer',
           date: 'February 2023 - October 2025',
-          description: 'As a Full Stack Developer, I worked closely with clients to troubleshoot, customize, and resolve issues in highly specialized software applications. Leveraging JavaScript, AngularJS, PHP, and Java, I developed and implemented creative solutions tailored to unique business requirements. Partnered with cross-functional teams to ensure timely resolution and continuous improvement of client systems, while maintaining strong communication to understand evolving needs and deliver high-impact results.'
+          description: 'As a Full Stack Developer, I worked closely with clients to troubleshoot, customize, and resolve issues in highly specialized software applications. Leveraging JavaScript, AngularJS, PHP, and Java, I developed and implemented creative solutions tailored to unique business requirements. Partnered with cross-functional teams to ensure timely resolution and continuous improvement of client systems, while maintaining strong communication to understand evolving needs and deliver high-impact results.',
         },
         {
           id: 1,
@@ -25,7 +26,7 @@ function App() {
           image: 'src/assets/infosys.svg',
           subtitle: 'Teachnology Lead',
           date: 'June 2018 - February 2023',
-          description: 'As a Java Developer, I worked on an Agile team to design and implement scalable Java APIs for American Express to maintain and enhance their product catalog. Utilizing Vert.x and Couchbase, we were able to achieve high performance and customization, as well as ensure data persistence across multiple data centers. Collaborated with cross-functional teams and departments globally to deliver impactful features and provide ongoing support for these applications.'
+          description: 'As a Java Developer, I worked on an Agile team to design and implement scalable Java APIs for American Express to maintain and enhance their product catalog. Utilizing Vert.x and Couchbase, we were able to achieve high performance and customization, as well as ensure data persistence across multiple data centers. Collaborated with cross-functional teams and departments globally to deliver impactful features and provide ongoing support for these applications.',
         },
         {
           id: 2,
@@ -34,11 +35,12 @@ function App() {
           image: 'src/assets/revature.png',
           subtitle: 'Software Engineer',
           date: 'February 2018 - August 2023',
-          description: 'As a Full-Stack Developer at Revature, I gained experience in various in-demand technologies, including Java, Spring Boot, Kafka and SQL databases for API development, and Angular for front-end. Revature\'s training aims to prepare Developers for job opportunities through full-stack proficiency.'
+          description: 'As a Full-Stack Developer at Revature, I gained experience in various in-demand technologies, including Java, Spring Boot, Kafka and SQL databases for API development, and Angular for front-end. Revature\'s training aims to prepare Developers for job opportunities through full-stack proficiency.',
         }
       ]
     },
     {
+      id: 1,
       title: "Education",
       entries: [
         {
@@ -53,6 +55,7 @@ function App() {
       ]
     },
     {
+      id: 2,
       title: "Certifications",
       entries: [
         {
@@ -67,6 +70,18 @@ function App() {
       ]
     }
   ]
+
+  window.addEventListener('scroll', () => {
+    document.querySelectorAll('.column-container').forEach(container => {
+      const rect = container.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight * 1 && rect.bottom > 0;
+
+      if (inView) {
+        const children = container.querySelectorAll('.column');
+        children.forEach(child => child.classList.add('scrolled'));
+      }
+    });
+  });
 
   return (
     <>
@@ -83,22 +98,22 @@ function App() {
         </p>
       </div>
       {sections.map((sec) =>
-        <div>
+        <div key={sec.id}>
           <h2>{sec.title}</h2>
           <hr className="divider"></hr>
           <div className="card">
             <ul>
               {sec.entries.map((entry) => (
                 <li key={entry.id}>
-                  <div className="column-container">
-                    <div className="column">
+                  <div className="column-container" id={`column-container-${sec.id}-${entry.id}`}>
+                    <div className="column left">
                       <a href={entry.website} target="_blank">
                         <img src={entry.image} href={entry.website} target="_blank" className="external-logo"></img>
                       </a>
                       <h4>{entry.subtitle}</h4>
                       <p>{entry.date}</p>
                     </div>
-                    <div className="column">
+                    <div className="column right">
                       <p className="code-box">{entry.description}</p>
                     </div>
                   </div>
@@ -108,6 +123,9 @@ function App() {
           </div>
         </div>
       )}
+      <p className="read-the-docs">
+        This website was built with React
+      </p>
     </>
   )
 }

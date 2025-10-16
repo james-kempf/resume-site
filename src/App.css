@@ -78,6 +78,16 @@
   flex: 1;
   box-sizing: border-box;
   text-align: left;
+  transition: transform 1s ease, opacity 1s ease;
+}
+.left {
+  transform: translateX(-20%);
+}
+.right {
+  transform: translateX(20%);
+}
+.scrolled {
+  transform: translateX(0);
 }
 
 .external-logo {
