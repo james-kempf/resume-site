@@ -66,6 +66,7 @@
 .column-container {
   display: flex;
   gap: 20px;
+  padding-top: 32px;
 }
 @media (max-width: 1000px) {
   .column-container {
