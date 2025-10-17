@@ -2,7 +2,7 @@ import { useState } from 'react'
 import portrait from './assets/portrait.jpg'
 import sections from './data/sections.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faReact } from '@fortawesome/free-brands-svg-icons';
 import './App.css'
 
 function App() {
@@ -67,7 +67,7 @@ function App() {
         </div>
       )}
       <p className='read-the-docs'>
-        This website was built with React
+        This website was built with <FontAwesomeIcon icon={faReact} /> React
       </p>
     </>
   )
