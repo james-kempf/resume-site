@@ -95,11 +95,18 @@
   filter: brightness(0) invert(1);
   padding-top: 20px;
 }
-
 .external-logo-lrg {
   height: 70px;
   filter: brightness(0) invert(1);
   padding-top: 20px;
+}
+.external-favicon {
+  height: 15px;
+  filter: brightness(0) invert(1);
+  padding-top: 20px;
+}
+.social-link {
+  padding: 10px;
 }
 
 .code-box {

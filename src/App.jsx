@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import portrait from './assets/portrait.jpg'
 import sections from './data/sections.json'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import './App.css'
 
 function App() {
@@ -21,11 +23,17 @@ function App() {
   return (
     <>
       <div>
-        <img src={portrait} alt="James Kempf" className="profile-image" />
+        <img src={portrait} alt='James Kempf' className='profile-image' />
       </div>
       <h1>James Kempf</h1>
       <h2>Full Stack Developer</h2>
-      <div className="card">
+      <a className="social-link" href='https://www.linkedin.com/in/james-kempf-1bb20a13a/' target='_blank'>
+        <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+      </a>
+      <a className="social-link" href='https://github.com/james-kempf' target='_blank'>
+        <FontAwesomeIcon icon={faGithub} /> GitHub
+      </a>
+      <div className='card'>
         <p>Full Stack Developer with 7+ years of experience delivering scalable, client-focused software solutions.
           Proficient in Java, JavaScript, AngularJS, PHP, and Spring Boot, with hands-on work in both SQL and NoSQL databases.
           Experienced in building high-performance APIs and customized applications in Agile teams,
@@ -35,21 +43,21 @@ function App() {
       {sections.map((sec, secIndex) =>
         <div key={secIndex}>
           <h2>{sec.title}</h2>
-          <hr className="divider"></hr>
-          <div className="card">
+          <hr className='divider'></hr>
+          <div className='card'>
             <ul>
               {sec.entries.map((entry, entryIndex) => (
                 <li key={entryIndex}>
-                  <div className="column-container" id={`column-container-${sec.id}-${entry.id}`}>
-                    <div className="column left">
-                      <a href={entry.website} target="_blank">
-                        <img src={entry.image} href={entry.website} target="_blank" className="external-logo"></img>
+                  <div className='column-container' id={`column-container-${sec.id}-${entry.id}`}>
+                    <div className='column left'>
+                      <a href={entry.website} target='_blank'>
+                        <img src={entry.image} href={entry.website} target='_blank' className='external-logo'></img>
                       </a>
                       <h4>{entry.subtitle}</h4>
                       <p>{entry.date}</p>
                     </div>
-                    <div className="column right">
-                      <p className="code-box">{entry.description}</p>
+                    <div className='column right'>
+                      <p className='code-box'>{entry.description}</p>
                     </div>
                   </div>
                 </li>
@@ -58,7 +66,7 @@ function App() {
           </div>
         </div>
       )}
-      <p className="read-the-docs">
+      <p className='read-the-docs'>
         This website was built with React
       </p>
     </>
