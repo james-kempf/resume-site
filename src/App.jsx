@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Section from './Section.jsx'
-import portrait from './assets/portrait.jpg'
+import portrait from './assets/profile.jpg'
 import sections from './data/sections.json'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faReact } from '@fortawesome/free-brands-svg-icons'
