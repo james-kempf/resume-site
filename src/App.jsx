@@ -12,7 +12,7 @@ function App() {
   window.addEventListener('scroll', () => {
     document.querySelectorAll('.column-container').forEach(container => {
       const rect = container.getBoundingClientRect();
-      const inView = rect.top < window.innerHeight * 1 && rect.bottom > 0;
+      const inView = rect.top < window.innerHeight * .8 && rect.bottom > 0;
 
       if (inView) {
         const children = container.querySelectorAll('.column');

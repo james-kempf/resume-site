@@ -82,12 +82,15 @@
   transition: transform 1s ease, opacity 1s ease;
 }
 .left {
+  opacity: 0;
   transform: translateX(-20%);
 }
 .right {
+  opacity: 0;
   transform: translateX(20%);
 }
 .scrolled {
+  opacity: 1;
   transform: translateX(0);
 }
 
