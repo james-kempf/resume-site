@@ -55,6 +55,16 @@
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+@media (min-width: 1000px) {
+  .basic-list .column-container {
+    display: flex;
+    align-items: center;
+  }
+  .basic-list p,
+  .basic-list h4 {
+    margin: 0;
+  }
+}
 
 .profile-image {
   width: 150px;

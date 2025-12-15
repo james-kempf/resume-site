@@ -79,5 +79,35 @@
                 "description": "An Oracle Certified Associate, Java SE 8 Programmer has demonstrated knowledge of object-oriented concepts, the Java programming language and general knowledge of Java platforms and technologies."
             }
         ]
+    },
+    {
+        "title": "Technologies",
+        "basic": true,
+        "entries": [
+            {
+                "subtitle": "Programming Languages",
+                "points": ["Java, JavaScript, Python, C++, PHP"]
+            },
+            {
+                "subtitle": "Databases",
+                "points": ["SQL, NoSQL, Couchbase, Mongo, Elasticsearch"]
+            },
+            {
+                "subtitle": "Frameworks & Libraries",
+                "points": ["Spring Boot, Vert.x, AngularJS, Angular, React, Ember"]
+            },
+            {
+                "subtitle": "Cloud & Infrastructure",
+                "points": ["AWS, GCP, RedHat"]
+            },
+            {
+                "subtitle": "DevOps & Tools",
+                "points": ["Git, CI/CD, Jenkins, Docker, Linux"]
+            },
+            {
+                "subtitle": "Architecture & Methodologies",
+                "points": ["Full Stack Development, Microservices, Agile / Scrum, SaaS"]
+            }
+        ]
     }
 ]

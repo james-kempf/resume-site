@@ -8,7 +8,7 @@ function Section({ sec }) {
         <h2>{sec.title}</h2>
         <hr className='divider'></hr>
         <div>
-          <ul>
+          <ul className={sec.basic && 'basic-list'}>
             {sec.entries.map((entry, index) => (
               <Entry entry={entry} key={index} />
             ))}
