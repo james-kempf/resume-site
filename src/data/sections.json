@@ -45,6 +45,14 @@
         "title": "Certifications",
         "entries": [
             {
+                "name": "AWS Certified Cloud Practitioner",
+                "website": "https://www.credly.com/badges/d8b84d2f-46f7-4b32-8bcd-e48081260178/public_url",
+                "image": "/images/aws-cert.png",
+                "subtitle": "AWS Certified Cloud Practitioner",
+                "date": "Dec 12, 2025",
+                "description": "An AWS Certified Cloud Practitioner has demonstrated foundational knowledge of AWS Cloud architecture, core compute, storage, networking, and database services, AWS security and identity services, compliance concepts, pricing models, billing, and cost optimization, as well as the AWS shared responsibility model."
+            },
+            {
                 "name": "Oracle Certified Associate",
                 "website": "https://www.credly.com/badges/e552e4c2-72ca-4042-9782-e40423780e3d/public_url",
                 "image": "/images/java-cert.png",
