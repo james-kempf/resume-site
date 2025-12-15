@@ -36,7 +36,7 @@ function App() {
       </a>
       <div className='card'>
         <p>Full Stack Developer with 7+ years of experience delivering scalable, client-focused software solutions.
-          Proficient in Java, JavaScript, AngularJS, PHP, and Spring Boot, with hands-on work in both SQL and NoSQL databases.
+          Proficient in Java, JavaScript, React, Angular, and Spring Boot, with hands-on work in both SQL and NoSQL databases.
           Experienced in building high-performance APIs and customized applications in Agile teams,
           collaborating with cross-functional groups to troubleshoot, innovate, and deliver impactful features across the full stack.
         </p>
