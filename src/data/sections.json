@@ -8,7 +8,13 @@
                 "image": "/images/thentia.svg",
                 "subtitle": "Full Stack Developer",
                 "date": "February 2023 - October 2025",
-                "description": "Worked closely with clients to troubleshoot, customize, and resolve issues in highly specialized software applications. Leveraging JavaScript, AngularJS, PHP, and Java, I developed and implemented creative solutions tailored to unique business requirements. Partnered with cross-functional teams to ensure timely resolution and continuous improvement of client systems, while maintaining strong communication to understand evolving needs and deliver high-impact results."
+                "description": "Worked closely with flagship clients to customize and enhance their SaaS application instances. Leveraging JavaScript, AngularJS, PHP, and Java, I developed and implemented creative solutions tailored to unique business requirements. Partnered with cross-functional teams to ensure timely resolution and continuous improvement of client systems, while maintaining strong communication to understand evolving needs and deliver high-impact results.",
+                "points": [
+                    "Worked closely with flagship clients to customize and enhance their SaaS application instances.",
+                    "Built tailored solutions using JavaScript, AngularJS, PHP, and Java to meet unique business requirements.",
+                    "Aided in migrating and maintaining infrastructure and applications in AWS.",
+                    "Resolved critical data and integration issues affecting large scaled applications."
+                ]
             },
             {
                 "name": "Infosys",
@@ -16,7 +22,13 @@
                 "image": "/images/infosys.svg",
                 "subtitle": "Teachnology Lead",
                 "date": "June 2018 - February 2023",
-                "description": "Took part in an Agile team to design and implement scalable Java APIs for American Express to maintain and enhance their product catalog. Utilizing Vert.x and Couchbase, we were able to achieve high performance and customization, as well as ensure data persistence across multiple data centers. Collaborated with cross-functional teams and departments globally to deliver impactful features and provide ongoing support for these applications."
+                "description": "Took part in an Agile team to design and implement scalable Java APIs for American Express to maintain and enhance their product catalog. Utilizing Vert.x and Couchbase, we were able to achieve high performance and customization, as well as ensure data persistence across multiple data centers. Collaborated with cross-functional teams and departments globally to deliver impactful features and provide ongoing support for these applications.",
+                "points": [
+                    "Designed and implemented scalable Java APIs for American Express within an Agile development environment.",
+                    "Leveraged Vert.x and Couchbase to deliver high-performance, customizable, and resilient distributed systems.",
+                    "Utilized React to create a modern front end application to view and manage a financial product catalog.",
+                    "Ingested, transformed, and synchronized data from legacy systems."
+                ]
             },
             {
                 "name": "Revature",
@@ -24,7 +36,13 @@
                 "image": "/images/revature.png",
                 "subtitle": "Software Engineer",
                 "date": "February 2018 - June 2023",
-                "description": "In my training at Revature, I gained experience in various in-demand technologies, including Java, Spring Boot, Kafka and SQL databases for API development, and Angular for front-end. Revature's training aims to prepare Developers for job opportunities through full-stack proficiency."
+                "description": "In my training at Revature, I gained experience in various in-demand technologies, including Java, Spring Boot, Kafka and SQL databases for API development, and Angular for front-end. Revature's training aims to prepare Developers for job opportunities through full-stack proficiency.",
+                "points": [
+                    "Trained in full-stack development using Angular, Java, Spring Boot, Kafka, and SQL/NoSQL databases.",
+                    "Built hands-on projects emphasizing microservice API development and modern front-end patterns.",
+                    "Developed strong problem-solving and software engineering fundamentals through accelerated learning.",
+                    "Recognized as top developer in the cohort for delivering high-quality code and technical leadership."
+                ]
             }
         ]
     },

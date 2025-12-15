@@ -12,7 +12,10 @@ function Entry({ entry }) {
             <p>{entry.date}</p>
           </div>
           <div className='column right'>
-            <p className='code-box'>{entry.description}</p>
+                <p className='code-box'>{
+                  entry.points ? entry.points.map((point) => "// " + point).join('\n\n') : 
+                  "/*\n" + entry.description + "\n*/"
+                }</p>
           </div>
         </div>
       </li>
