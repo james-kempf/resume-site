@@ -11,7 +11,7 @@
                 "description": "Worked closely with flagship clients to customize and enhance their SaaS application instances. Leveraging JavaScript, AngularJS, PHP, and Java, I developed and implemented creative solutions tailored to unique business requirements. Partnered with cross-functional teams to ensure timely resolution and continuous improvement of client systems, while maintaining strong communication to understand evolving needs and deliver high-impact results.",
                 "points": [
                     "Worked closely with flagship clients to customize and enhance their SaaS application instances.",
-                    "Built tailored solutions using JavaScript, AngularJS, PHP, and Java to meet unique business requirements.",
+                    "Built tailored solutions using TypeScript, Angular, Java, and Spring Boot to meet unique business requirements.",
                     "Aided in migrating and maintaining infrastructure and applications in AWS.",
                     "Resolved critical data and integration issues affecting large scaled applications."
                 ]
@@ -94,11 +94,11 @@
             },
             {
                 "subtitle": "Frameworks & Libraries",
-                "points": ["Spring Boot, Vert.x, AngularJS, Angular, React, Ember"]
+                "points": ["Spring Boot, Vert.x, React, Angular"]
             },
             {
                 "subtitle": "Cloud & Infrastructure",
-                "points": ["AWS, GCP, RedHat"]
+                "points": ["AWS, GCP, Terraform"]
             },
             {
                 "subtitle": "DevOps & Tools",
